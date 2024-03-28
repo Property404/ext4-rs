@@ -25,6 +25,7 @@ const INODE_BASE_LEN: usize = 128;
 const XATTR_MAGIC: u32 = 0xEA02_0000;
 
 bitflags! {
+    #[derive(Copy, Clone, Debug, PartialEq, Eq)]
     struct CompatibleFeature: u32 {
         const DIR_PREALLOC  = 0x0001;
         const IMAGIC_INODES = 0x0002;
@@ -37,6 +38,7 @@ bitflags! {
 }
 
 bitflags! {
+    #[derive(Copy, Clone, Debug, PartialEq, Eq)]
     struct CompatibleFeatureReadOnly: u32 {
         const SPARSE_SUPER  = 0x0001;
         const LARGE_FILE    = 0x0002;
@@ -55,6 +57,7 @@ bitflags! {
 }
 
 bitflags! {
+    #[derive(Copy, Clone, Debug, PartialEq, Eq)]
     struct IncompatibleFeature: u32 {
        const COMPRESSION    = 0x0001;
        const FILETYPE       = 0x0002;

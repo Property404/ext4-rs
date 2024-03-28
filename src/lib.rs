@@ -73,6 +73,7 @@ fn not_found<S: ToString>(reason: S) -> ParseError {
 }
 
 bitflags! {
+    #[derive(Copy, Clone, Debug, PartialEq, Eq)]
     pub struct InodeFlags: u32 {
         const SECRM        = 0x0000_0001; /* Secure deletion */
         const UNRM         = 0x0000_0002; /* Undelete */
