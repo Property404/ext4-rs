@@ -1,16 +1,7 @@
-extern crate bootsector;
-extern crate cast;
-extern crate clap;
-extern crate ext4;
-#[macro_use]
-extern crate anyhow;
-extern crate hexdump;
-
 use std::fs;
 use std::io::Read;
 
-use anyhow::Context;
-use anyhow::Error;
+use anyhow::{anyhow, Context, Error};
 use clap::{App, Arg, SubCommand};
 use ext4::{ReadAt, SuperBlock};
 
