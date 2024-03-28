@@ -6,7 +6,6 @@ extern crate ext4;
 extern crate anyhow;
 extern crate hexdump;
 
-use std::convert::TryFrom;
 use std::fs;
 use std::io::Read;
 

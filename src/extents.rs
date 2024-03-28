@@ -1,4 +1,3 @@
-use std::convert::TryFrom;
 use std::io;
 
 use anyhow::ensure;
@@ -265,7 +264,6 @@ fn zero(buf: &mut [u8]) {
 
 #[cfg(test)]
 mod tests {
-    use std::convert::TryFrom;
     use std::io::Read;
 
     use crate::extents::Extent;
